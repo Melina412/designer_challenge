@@ -1,0 +1,361 @@
+/* --- es fehlt noch:
+- korrektes layout challenge section
+- finale einstellungen font & font weight
+- animation subscribe button
+- responsive design (mobile version)
+- code zusammenfassen */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: RobotoLight;
+  src: url("../fonts/Roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+  font-family: RobotoBold;
+  src: url("../fonts/Roboto/Roboto-Bold.ttf");
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Roboto;
+}
+
+/* -------------------- general style -------------------- */
+
+h1 {
+  font-size: 5.4rem;
+}
+
+h2 {
+  font-size: 3.8rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: RobotoBold;
+  font-size: 2.8rem;
+}
+
+h4 {
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+
+p {
+  font-family: RobotoLight;
+  font-size: 1.8rem;
+  line-height: 200%;
+}
+
+body {
+  background-image: url("../img/ilustracion1.png");
+  background-position: top right;
+  background-size: 60vw;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+/* -------------------- header style -------------------- */
+
+header {
+  width: 100vw;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.header-text {
+  height: 4.3rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 9rem;
+  line-height: 120%;
+  gap: 0.5rem;
+  position: absolute;
+}
+
+.logo {
+  width: 4.2rem;
+  height: 4.2rem;
+  position: fixed;
+  left: 3rem;
+}
+
+header p:first-child {
+  font-family: RobotoBold;
+  font-size: 2.4rem;
+  height: 2.9rem;
+}
+header p:nth-child(2) {
+  font-size: 1.2rem;
+  height: 1.4rem;
+}
+
+/* -------------------- home section style -------------------- */
+
+.home {
+  height: 76.5rem;
+  position: relative;
+}
+
+.animated-img {
+  position: absolute;
+  width: 75rem;
+  top: -8rem;
+  right: 4rem;
+  animation: homeSectionAnimation 1s ease forwards;
+}
+
+.home-text {
+  width: 47rem;
+  height: 27.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  position: absolute;
+  top: 35rem;
+  left: 14.5rem;
+}
+
+.rocket {
+  width: 3.2rem;
+  height: 2.8rem;
+}
+
+.scroll {
+  font-family: Roboto;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ff3571;
+  text-transform: uppercase;
+  margin-top: 4rem;
+}
+
+.home-background {
+  background-image: url("../img/ilustracion1.png");
+  background-size: 50vw;
+  background-repeat: no-repeat;
+}
+
+/* -------------------- images section style -------------------- */
+
+.images img {
+  height: auto;
+  width: 100%;
+  margin-bottom: 25rem;
+}
+
+/* -------------------- about section style -------------------- */
+
+.about {
+  margin-bottom: 20rem;
+}
+
+.outer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  flex-wrap: wrap;
+  align-items: center;
+  /* margin: 0 20rem;
+  padding: 0 0rem; */
+}
+
+.about img {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+/* * Abschnitt 1 */
+
+.about-one {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  margin: 0 15vw 0 10vw;
+}
+
+.about-one p {
+  width: 60rem;
+}
+
+.about-one-left {
+  width: 30rem;
+}
+
+.about-one-left div:first-child {
+  display: flex;
+}
+
+/* * Abschnitt 2 */
+
+.about-two {
+  width: 65rem;
+  justify-content: center;
+  margin: 0 20rem 10rem 0;
+}
+
+/* * Abschnitt 3 */
+
+.about-three {
+  display: grid;
+  grid-template-columns: 50rem 50rem;
+  justify-content: center;
+  align-content: center;
+  gap: 6rem;
+  margin: 0 10vw;
+}
+
+.about-three article {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+}
+
+.about-three article div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-right: 6rem;
+}
+
+/* -------------------- challenge section style -------------------- */
+
+.picture {
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 60rem 60rem;
+  justify-content: center;
+  column-gap: 20rem;
+  row-gap: 10rem;
+}
+
+.challenge-header {
+  text-align: center;
+  margin: 0 auto 10rem auto;
+}
+
+.challenge-header p {
+  font-size: 1.4rem;
+  line-height: 130%;
+  width: 45rem;
+  margin: 0 auto;
+  padding: 2.5rem;
+}
+
+.number {
+  font-size: 5.2rem;
+  font-family: RobotoBold;
+  color: #ddd;
+}
+
+.item article {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.challenge {
+  margin-bottom: 20rem;
+}
+
+/* -------------------- subscribe section style -------------------- */
+
+.subscribe-header {
+  text-align: center;
+  margin: 0 auto 5rem auto;
+}
+
+.subscribe-header p {
+  font-size: 1.4rem;
+  line-height: 130%;
+  width: 45rem;
+  margin: 0 auto;
+  padding: 2.5rem;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.mail input {
+  border: 1px solid #f5f5f5;
+  box-shadow: 0px 15px 60px 0px rgba(12, 14, 31, 0.06);
+  width: 65rem;
+  height: 2.8rem;
+  padding: 2.9rem 0;
+  text-align: center;
+  /* font-family: Arial; */
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+/* !warum kann man bei Arial das font weight nicht einstellen, wie kann man die variable Schrift in css einbinden? nicht bei google fonts  */
+
+.submit-button input {
+  width: 25rem;
+  height: 6rem;
+  text-align: center;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: #ff3571;
+  color: #fff;
+  font-size: 1.9rem;
+}
+
+.subscribe {
+  margin-bottom: 30rem;
+}
+
+/* -------------------- footer style -------------------- */
+
+footer div {
+  display: flex;
+  gap: 1.5rem;
+  line-height: 150%;
+  margin-left: 13rem;
+}
+
+footer img {
+  width: 2.8rem;
+  height: 2.4rem;
+}
+
+/* -------------------- keyframes -------------------- */
+
+@keyframes homeSectionAnimation {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(30px);
+  }
+}
