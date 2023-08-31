@@ -48,8 +48,8 @@ h3 {
 }
 
 h4 {
+  font-family: RobotoBold;
   font-size: 1.9rem;
-  font-weight: bold;
 }
 
 p {
@@ -137,9 +137,8 @@ header p:nth-child(2) {
 }
 
 .scroll {
-  font-family: Roboto;
+  font-family: RobotoBold;
   font-size: 1.4rem;
-  font-weight: bold;
   color: #ff3571;
   text-transform: uppercase;
   margin-top: 4rem;
@@ -235,16 +234,29 @@ header p:nth-child(2) {
 
 /* -------------------- challenge section style -------------------- */
 
-.picture {
-  width: 100%;
+.picture-left {
+  width: 75%;
+  justify-self: left;
+}
+
+.picture-right {
+  width: 75%;
+  justify-self: right;
+}
+
+.item {
+  display: grid;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: 60rem 60rem;
+  /* grid-template-columns: 60rem 60rem; */
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
-  column-gap: 20rem;
+  align-items: center;
+  column-gap: 2cap;
   row-gap: 10rem;
+  margin: 0 8%;
 }
 
 .challenge-header {
@@ -264,6 +276,10 @@ header p:nth-child(2) {
   font-size: 5.2rem;
   font-family: RobotoBold;
   color: #ddd;
+}
+
+.challenge-text {
+  font-size: 1.4rem;
 }
 
 .item article {
