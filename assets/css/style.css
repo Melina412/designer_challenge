@@ -316,6 +316,10 @@ header p:nth-child(2) {
 
 /* -------------------- subscribe section style -------------------- */
 
+.subscribe {
+  margin-bottom: 30rem;
+}
+
 .subscribe-header {
   text-align: center;
   margin: 0 auto 5rem auto;
@@ -362,10 +366,12 @@ fieldset {
   background-color: #ff3571;
   color: #fff;
   font-size: 1.9rem;
+  cursor: pointer;
+  animation: subscribeButtonHoverOut 0.5s ease forwards;
 }
 
-.subscribe {
-  margin-bottom: 30rem;
+.submit-button input:hover {
+  animation: subscribeButtonHoverIn 0.5s ease forwards;
 }
 
 /* -------------------- footer style -------------------- */
@@ -390,5 +396,23 @@ footer img {
   }
   to {
     transform: translateY(30px);
+  }
+}
+
+@keyframes subscribeButtonHoverIn {
+  0% {
+    background: #ff3571;
+  }
+  100% {
+    background: linear-gradient(to right, #ff3571, #3232dc);
+  }
+}
+
+@keyframes subscribeButtonHoverOut {
+  0% {
+    background: linear-gradient(to right, #ff3571, #3232dc);
+  }
+  100% {
+    background: #ff3571;
   }
 }
