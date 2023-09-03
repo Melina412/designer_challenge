@@ -303,5 +303,15 @@
 }
 
 /* -------------------- xxl screen -------------------- */
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1400px) {
+  .home {
+    height: 100rem;
+  }
+
+  .about,
+  .challenge,
+  .subscribe {
+    width: 1400px;
+    margin: 0 auto 20rem auto;
+  }
 }
