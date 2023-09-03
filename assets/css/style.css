@@ -168,8 +168,6 @@ header p:nth-child(2) {
   gap: 10rem;
   flex-wrap: wrap;
   align-items: center;
-  /* margin: 0 20rem;
-  padding: 0 0rem; */
 }
 
 .about-icon {
@@ -188,7 +186,7 @@ header p:nth-child(2) {
 }
 
 .about-one p {
-  width: 60rem;
+  width: 50vw;
   flex: 1;
 }
 
@@ -267,11 +265,10 @@ header p:nth-child(2) {
 
 .grid-container {
   display: grid;
-  /* grid-template-columns: 60rem 60rem; */
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
-  column-gap: 2cap;
+  column-gap: 2rem;
   row-gap: 10rem;
   margin: 0 8%;
 }
@@ -315,10 +312,6 @@ header p:nth-child(2) {
 }
 
 /* -------------------- subscribe section style -------------------- */
-
-.subscribe {
-  margin-bottom: 30rem;
-}
 
 .subscribe-header {
   text-align: center;
@@ -374,10 +367,15 @@ fieldset {
   animation: subscribeButtonHoverIn 0.5s ease forwards;
 }
 
+.subscribe {
+  margin-bottom: 30rem;
+}
+
 /* -------------------- footer style -------------------- */
 
 footer div {
   display: flex;
+  align-items: center;
   gap: 1.5rem;
   line-height: 150%;
   margin-left: 13rem;
