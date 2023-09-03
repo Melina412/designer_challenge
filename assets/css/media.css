@@ -50,8 +50,8 @@
     width: 24rem;
     height: 14rem;
     gap: 1rem;
-    top: 18rem;
-    left: 10rem;
+    top: 20vw;
+    left: 10vw;
   }
 
   .rocket {
@@ -62,6 +62,11 @@
   .scroll {
     font-size: 0.7rem;
     margin-top: 2rem;
+  }
+
+  .animated-img {
+    top: -6rem;
+    right: 2rem;
   }
 
   /* * --- about section --- */
@@ -171,6 +176,130 @@
 
 /* -------------------- mobile -------------------- */
 @media screen and (max-width: 576px) {
+  /* * --- font --- */
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    line-height: 150%;
+  }
+
+  /* * --- header --- */
+
+  .header-text {
+    padding-left: 0;
+  }
+
+  .logo {
+    width: 3.2rem;
+    height: 3.2rem;
+    left: 0.3rem;
+  }
+
+  header p:first-child {
+    font-size: 2.2rem;
+  }
+  header p:nth-child(2) {
+    font-size: 1.4rem;
+  }
+
+  /* * --- home section --- */
+
+  .home {
+    height: 30rem;
+  }
+
+  .home-text {
+    width: 18rem;
+  }
+
+  /* * --- about section --- */
+
+  /* * Abschnitt 1 */
+  .about-one {
+    margin: 0 10vw;
+    justify-content: flex-start;
+  }
+
+  .about-one p {
+    flex: none;
+    width: 70vw;
+  }
+
+  /* * Abschnitt 2 */
+  .h2-container {
+    width: 80%;
+    margin: 0 10vw;
+  }
+
+  /* * Abschnitt 3 */
+  .about-three {
+    grid-template-columns: 1fr;
+  }
+
+  /* * --- challenge section --- */
+  .grid-container {
+    column-gap: 0;
+    padding-left: 1rem;
+  }
+
+  .challenge-header p {
+    font-size: 1.2rem;
+    width: 35rem;
+  }
+
+  .number {
+    font-size: 2.5rem;
+  }
+
+  .challenge-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  /* * --- subscribe section --- */
+
+  .subscribe-header p {
+    font-size: 1.2rem;
+    width: 35rem;
+  }
+  .mail input {
+    width: 15rem;
+    height: 1rem;
+    padding: 1.2rem 0;
+    font-size: 1rem;
+  }
+
+  .submit-button input {
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.2rem;
+  }
+
+  /* * --- footer --- */
+
+  footer div {
+    gap: 0.4rem;
+    margin-left: 3.5rem;
+  }
+
+  footer img {
+    width: 1rem;
+    height: 0.9rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
 }
 
 /* -------------------- xxl screen -------------------- */
