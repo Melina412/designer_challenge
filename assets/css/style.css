@@ -34,12 +34,13 @@ html {
 /* -------------------- general style -------------------- */
 
 h1 {
+  font-family: RobotoBold;
   font-size: 5.4rem;
 }
 
 h2 {
+  font-family: RobotoBold;
   font-size: 3.8rem;
-  font-weight: bold;
 }
 
 h3 {
@@ -59,10 +60,6 @@ p {
 }
 
 body {
-  background-image: url("../img/ilustracion1.png");
-  background-position: top right;
-  background-size: 60vw;
-  background-repeat: no-repeat;
   overflow-x: hidden;
 }
 
@@ -106,6 +103,13 @@ header p:nth-child(2) {
 
 /* -------------------- home section style -------------------- */
 
+.background {
+  background-image: url("../img/ilustracion1.png");
+  background-position: top right;
+  background-size: 60vw;
+  background-repeat: no-repeat;
+}
+
 .home {
   height: 76.5rem;
   position: relative;
@@ -113,7 +117,7 @@ header p:nth-child(2) {
 
 .animated-img {
   position: absolute;
-  width: 75rem;
+  width: 50vw;
   top: -8rem;
   right: 4rem;
   animation: homeSectionAnimation 1s ease forwards;
@@ -144,12 +148,6 @@ header p:nth-child(2) {
   margin-top: 4rem;
 }
 
-.home-background {
-  background-image: url("../img/ilustracion1.png");
-  background-size: 50vw;
-  background-repeat: no-repeat;
-}
-
 /* -------------------- images section style -------------------- */
 
 .images img {
@@ -174,7 +172,7 @@ header p:nth-child(2) {
   padding: 0 0rem; */
 }
 
-.about img {
+.about-icon {
   width: 3.2rem;
   height: 3.2rem;
 }
@@ -184,12 +182,14 @@ header p:nth-child(2) {
 .about-one {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 10rem;
   margin: 0 15vw 0 10vw;
 }
 
 .about-one p {
   width: 60rem;
+  flex: 1;
 }
 
 .about-one-left {
@@ -198,24 +198,40 @@ header p:nth-child(2) {
 
 .about-one-left div:first-child {
   display: flex;
+  align-items: flex-end;
+}
+
+.about-emoji {
+  height: 6.2rem;
+  width: 6rem;
 }
 
 /* * Abschnitt 2 */
 
 .about-two {
-  width: 65rem;
-  justify-content: center;
-  margin: 0 20rem 10rem 0;
+  width: 100%;
+}
+
+.h2-container {
+  height: 20rem;
+  width: 80%;
+  margin-left: 20vw;
+  margin-right: 10vw;
+}
+
+.about-two h2 {
+  word-wrap: break-word;
+  width: 65%;
 }
 
 /* * Abschnitt 3 */
 
 .about-three {
   display: grid;
-  grid-template-columns: 50rem 50rem;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-content: center;
-  gap: 6rem;
+  gap: 6rem 10rem;
   margin: 0 10vw;
 }
 
@@ -230,6 +246,7 @@ header p:nth-child(2) {
   flex-direction: column;
   gap: 1rem;
   padding-right: 6rem;
+  padding-top: 1.5rem;
 }
 
 /* -------------------- challenge section style -------------------- */
@@ -288,7 +305,7 @@ header p:nth-child(2) {
   gap: 2.5rem;
 }
 
-.icon {
+.challenge-icon {
   width: 4rem;
   height: 4rem;
 }
