@@ -35,8 +35,8 @@
 <tr>
 
 <td align="center">
-<img src="./assets/img/github/preview-3.png" width="400"/>
-<img src="./assets/img/github/preview-4.png" width="400"/>
+<img src="./assets/img/github/preview-3.png" width="375"/>
+<img src="./assets/img/github/preview-4.png" width="376"/>
 </td>
 
 </tr>
